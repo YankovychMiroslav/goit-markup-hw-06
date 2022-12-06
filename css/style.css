@@ -133,7 +133,7 @@ img {
 
   background: var(--link-focus-color);
   opacity: 0;
-  transition-property: var(--link-focus-color);
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -758,7 +758,7 @@ img {
   background-repeat: no-repeat;
   background-size: 0;
 
-  transition-property: outline-color background-color background-size;
+  transition-property: outline-color, background-color, background-size;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
