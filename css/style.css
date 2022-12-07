@@ -3,6 +3,7 @@
   --text-paragraf-color: #757575;
   --text-fon-white-color: #ffffff;
   --text-title-color: #212121;
+  --background-btn-color: #188ce8;
 
   --indent: 30px;
   --items: 3;
@@ -413,6 +414,7 @@ img {
 
 .footer-left-container {
   margin-right: 70px;
+  min-width: 231px;
 }
 
 .footer-logo {
@@ -524,12 +526,12 @@ img {
   background: #2f303a;
   outline: 1px solid transparent;
   outline-offset: -1px;
-  transition-property: outline;
+  transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-form-mail:focus {
-  outline: 1px solid var(--link-focus-color);
+  border-color: var(--link-focus-color);
 }
 .footer-form-mail:placeholder {
   display: flex;
@@ -625,13 +627,17 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
+.icon-modal:hover,
+.icon-modal:focus {
+  fill: var(--link-focus-color);
+}
 .icon-modal {
   fill: currentColor;
 }
 .modal-label {
   display: block;
 
-  margin-bottom: 30px;
+  margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
   line-height: calc(23 / 20);
@@ -646,13 +652,13 @@ img {
   font-size: 12px;
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
-  color: #757575;
+  color: var(--text-paragraf-color);
 
   margin-bottom: 4px;
 }
 .modal-form-wrapper {
   position: relative;
-  margin-bottom: 28px;
+  margin-bottom: 10px;
 }
 .modal-form-field {
   width: 100%;
@@ -664,20 +670,23 @@ img {
   border-radius: 4px;
   outline: 1px solid transparent;
   outline-offset: -1px;
-  transition-property: outline;
+  transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-field:focus {
-  outline: 1px solid var(--link-focus-color);
+  border-color: var(--link-focus-color);
 }
 .modal-form-icon {
   position: absolute;
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
-  transition: fill var(--link-focus-color);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-field:focus + .modal-form-icon {
   fill: var(--link-focus-color);
@@ -697,12 +706,12 @@ img {
 
   outline: 1px solid transparent;
   outline-offset: -1px;
-  transition-property: outline;
+  transition-property: order-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-message:focus {
-  outline: 1px solid var(--link-focus-color);
+  border-color: var(--link-focus-color);
 }
 .modal-form-message.placeholder {
   margin-left: 16px;
@@ -719,7 +728,7 @@ img {
   letter-spacing: 0.06em;
 
   color: var(--text-fon-white-color);
-  background: #188ce8;
+  background: var(--background-btn-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
