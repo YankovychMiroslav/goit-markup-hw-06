@@ -499,7 +499,7 @@ img {
   color: var(--text-fon-white-color);
   background-color: var(--link-focus-color);
 }
-.footer-form {
+.footer-form-nav {
   margin-left: 93px;
 }
 .footer-form-text {
